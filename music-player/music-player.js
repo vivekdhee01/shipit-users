@@ -205,7 +205,7 @@ class MusicPlayer {
     pause() {
         this.audio.pause();
         this.isPlaying = false;
-        this.playPauseBtn.innerHTML = '<i class="fas fa-play text-2xl ml-1"></i>';
+        this.playPauseBtn.innerHTML = '<i class="fas fa-pause text-2xl ml-1"></i>';
         this.albumArt.classList.add('paused');
     }
 
@@ -300,7 +300,7 @@ class MusicPlayer {
         const minutes = Math.floor(seconds / 60);
         const remainingSeconds = Math.floor(seconds % 60);
         // BUG LEVEL 1-2: Missing colon in time format
-        return `${minutes}${remainingSeconds.toString().padStart(2, '0')}`;
+        return `${minutes}${remainingSeconds.toString().padStart(2, ':0')}`;
     }
 
     renderPlaylist() {
