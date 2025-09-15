@@ -278,7 +278,7 @@ class MusicPlayer {
             const percentage = (this.audio.currentTime / this.audio.duration) * 100;
             this.updateProgressBar(percentage / 100);
             // BUG LEVEL 2-1: Using wrong property for current time display
-            this.currentTimeEl.textContent = this.formatTime(this.audio.duration);
+            this.currentTimeEl.textContent = this.formatTime(this.audio.currentTime);
         }
     }
 
