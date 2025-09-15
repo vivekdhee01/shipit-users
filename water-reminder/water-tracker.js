@@ -11,7 +11,7 @@ let waterLog = [];
 // Level 1 Bug 2: Goal input doesn't validate properly
 function setGoal() {
     const goalInput = document.getElementById('goal-input');
-    const newGoal = goalInput.value;
+    const newGoal = goalInput.value(500<goalInput<5000);
     
     // Bug: No validation for empty or invalid values
     dailyGoal = newGoal;
