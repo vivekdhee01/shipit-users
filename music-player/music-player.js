@@ -237,7 +237,7 @@ class MusicPlayer {
     toggleShuffle() {
         this.isShuffle = !this.isShuffle;
         // BUG LEVEL 2-2: Reversed logic for shuffle button styling
-        this.shuffleBtn.classList.toggle('text-white', !this.isShuffle);
+        this.shuffleBtn.classList.toggle('text-white', this.isShuffle);
         this.shuffleBtn.classList.toggle('text-white/60', this.isShuffle);
     }
 
