@@ -300,7 +300,7 @@ class MusicPlayer {
         const minutes = Math.floor(seconds / 60);
         const remainingSeconds = Math.floor(seconds % 60);
         // BUG LEVEL 1-2: Missing colon in time format
-        return `${minutes}${remainingSeconds.toString().padStart(2, ':0')}`;
+        return `${minutes}${remainingSeconds.toString().padStart(2, ':00')}`;
     }
 
     renderPlaylist() {
